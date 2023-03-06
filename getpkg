@@ -27,6 +27,7 @@ echo "Please enter the package you wish to build"
 read PKGNAM
 
 case "$PKGNAM" in 
+    gimp*) $PKGNAM=gimp ;;
     xfce4-dev-tools*) $PKGNAM=xfce4-dev-tools ;;
 esac
 
