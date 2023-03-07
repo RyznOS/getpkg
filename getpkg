@@ -27,8 +27,13 @@ echo "Please enter the package you wish to build"
 read PKGNAM
 
 case "$PKGNAM" in 
-    gimp*) $PKGNAM=gimp ;;
-    xfce4-dev-tools*) $PKGNAM=xfce4-dev-tools ;;
+    epiphany*) $PKGNAM=epiphany ;;
+    gimp*) $PKGNAM=gimp ;; 
+    gnome-color-manager*) $PKGNAM=gnome-color-manager ;;
+    shaderc*) $PKGNAM=shaderc ;;
+    vlc*) $PKGNAM=vlc ;; 
+    xfce-theme-manager*) $PKGNAM=xfce-theme-manager ;;
+    xfce4-dev-tools*) $PKGNAM=xfce4-dev-tools ;; 
 esac
 
 mkdir -pv /tmp/pkgget
